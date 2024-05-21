@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends 'navbar.html' %}
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+
+    <title>Title</title>
+</head>
+
+<body>
+
+
+
+    {% block content %}
+
+    <!-- Existing content -->
+
+
+    <div class="  d-flex ms-2 p-5">
+        {% for staff in staffs %}
+        <div class="service shadow">
+            <div class="text-center ">
+                {% if staff.staff_image %}
+                <img src="{{ staff.staff_image.url }}" alt="image" style="width: 330px;">
+                {% endif %}
+            </div>
+            <div class="py-3">
+                <p class="h2">{{ staff.firstname }} {{ staff.lastname }}</p>
+            </div>
+            <div class="pb-2">
+                <p>{{ staff.position }}</p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+    <!-- New content -->
+
+
+
+
+    {% endblock %}
+
+</body>
+
+</html>

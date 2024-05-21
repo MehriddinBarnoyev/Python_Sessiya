@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <title>Navbar</title>
+
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="toolbar">
+            <div>
+                <div class="row d-flex justify-content-between">
+                    <div class="col">
+                        <img src="https://online.pdp.uz/assets/icons/newPdpLogo.svg" alt="logo" style="width: 120px; height: 60px;">
+                    </div>
+                    <div class="col">
+                        <div class="nav-links">
+                            <a href="{% url 'home' %}"  class="btn  text-dark ms-5">Home</a>
+                            <a href="{% url 'services' %}" class="btn text-dark ">Services</a>
+                            <a href="{% url 'staffs' %}" class="btn text-dark ">Staffs</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    {% block content %}
+    {% endblock content %}
+   
+</body>
+
+</html>

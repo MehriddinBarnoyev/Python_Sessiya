@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends 'navbar.html' %}
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+</head>
+
+<body>
+    {% block content %}
+
+    <!-- codes -->
+
+    <div class="container">
+        <p class="h1 text-center  mb-5 pt-2">PDP Academy</p>
+        <div class="row">
+            <div class="col ">
+                <p class="h1 text-center ">PDP Academy O'zbekistondagi IT ga ixtisoslashtirilgan IT
+                    Academy</p>
+            </div>
+            <div class="col">
+                <img src="https://pdp.uz/static/media/2021.25bbf1f3e8d85f6e3d13.jpg" alt="" class="w-100"
+                    style="border-radius: 10px;">
+            </div>
+        </div>
+        <div class="card-body mt-5 ">
+            <div class="row p-5">
+                <div class="col">
+                    <p class="h1 text-">PDP BU ....</p>
+                    <p class="text-secondary h4">PDP - bu onlayn va onsite ta’lim platformasi. Biz bozorning yetakchi
+                        mutaxassislarining kurslari
+                        va dasturlarini, o'qitish, real loyihalar ustida ishlash, stajirovka va mamlakatning eng yirik
+                        kompaniyalarida ishga joylashish bo'yicha yondashuvlarni qo'lladik.</p>
+                </div>
+                <div class="col ">
+                    <img src="https://online.pdp.uz/assets/newPdp/pdp-xl-logo.svg" alt="" style="padding-left: 10px;">
+                </div>
+            </div>
+        </div>
+        <div class="card-body2 mt-5">
+            <div class="row">
+                <div class="col text-center mt-5">
+                    <div>
+                        <p class="h1">PDP <br> RAQAMLARDA</p>
+                    </div>
+                    <p class="h5 py-5">Bizning akademiyamiz bir nechta o’nlab kompaniyalar bilan hamkorlik
+                        aloqalari(memorandum)ni
+                        yo’lga qo’ygan.</p>
+                </div>
+                <div class="col" style="margin-left: 80px;">
+                    <div class="row">
+                        <div class="col ">
+                            <div class="d-flex">
+                                <img src="https://online.pdp.uz/assets/newPdp/icons/about-1.svg" alt="">
+                                <p class="h1 text-bold" style="margin-left: 20px; font-size: 60px;">35+</p>
+                            </div>
+                            <p class="h6 text-secondary mt-3" style="margin-left: 30px;">Barcha kurslarimiz soni</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col ">
+                            <div class="d-flex">
+                                <img src="https://online.pdp.uz/assets/newPdp/icons/about-2.svg" alt="">
+                                <p class="h1 text-bold" style="margin-left: 20px; font-size: 60px;">25+</p>
+                            </div>
+                            <p class="h6 text-secondary mt-3" style="margin-left: 30px;">Mentor va assistentlarimiz soni
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col ">
+                            <div class="d-flex">
+                                <img src="https://online.pdp.uz/assets/newPdp/icons/about-3.svg" alt="">
+                                <p class="h1 text-bold" style="margin-left: 20px; font-size: 60px;">1500+</p>
+                            </div>
+                            <p class="h6 text-secondary mt-3" style="margin-left: 30px;">Umumiy talabalarimiz soni</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer p-5">
+            <div class="row">
+                <div class="col">
+                    <div class="h6 secondary">
+                        <p>(78) 777-47-47</p>
+                        <p>Yagona xizmat raqami</p>
+                    </div>
+                    <div>
+                        <p>Toshkent shahar. <br>
+                            Shayxontohur tum., <br>
+                            Beruniy ko'chasi., 3A-uy.</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <p class="h4">Asosiy</p>
+                    <div>
+                        <p>Kompaniya haqida <br>
+                            Huquqiy hujjatlar <br>
+                            Bog’lanish <br>
+                            FAQ</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <p class="h4">Ta'lim</p>
+                    <p>
+                        Online <br>
+                        Onsite <br>
+                        Imtiyoz <br>
+                        Hamkorlik <br>
+                    </p>
+                </div>
+                <div class="col">
+                    <p class="h4">Loyihalar</p>
+                    <div>
+                        <p>
+                            PDP Presentation <br>
+                            PDP Guest Lecture <br>
+                            PDP Live <br>
+                            PDP Meetup <br>
+                            PDP Generation <br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p>Inflex,Inc. 2017 – 2024</p>
+        </div>
+    </div>
+
+
+    <!-- codes -->
+
+    {% endblock %}
+</body>
+
+</html>
